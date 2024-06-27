@@ -12,7 +12,7 @@
 
 <script lang="ts" setup>
   import AltostratusTxt from './texts/text.vue'
-  import SocialMediaLinks from '@/components/body/altostratus/social/social.vue'
+  import SocialMediaLinks from '@/components/experience/altostratus/social/social.vue'
 
 </script>
 
