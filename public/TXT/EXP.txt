@@ -1,0 +1,37 @@
+﻿CAS Training
+Desarrollo de aplicaciones utilizando Python con Flask para el backend y
+Vue.js para el frontend, implementando metodologías Agile en un equipo de
+13 miembros, hospedado en GCP.
+Formando parte de un subequipo de 4 desarrolladores para la creación de
+Es un sistema modular de larga duración, hospedado en Google Cloud.
+Despliegues automáticos mediante Jenkins y programación de tareas
+Automáticas con Cronjobs de Google Cloud.
+Diseño y ejecución de pruebas unitarias y funcionales, incluyendo la
+integración y desarrollo de test, para garantizar la calidad y la fiabilidad del
+software.
+Mantenimiento y desarrollo de nuevas funcionalidades de web bancaria con
+Java y JQuery en un equipo de 6 personas. Creación automática de excel
+para informes personalizados con condicionales, dicho proyecto está
+hospedado en Google Cloud.
+Arquitectura de software Modular, con microservicios.
+
+
+Altostratus
+ Desarrollo de soluciones back-end en Go y Python y front-end en Angular en
+un equipo diverso de diez profesionales.
+ Responsabilidad única sobre el back-end en proyectos clave, trabajando con
+Google Cloud y Kubernetes para sincronización y despliegue.
+Experiencia en bases de datos con MongoDB y Atlas, asegurando la gestión y
+almacenamiento eficiente de datos.
+Metodología agile
+Arquitectura de software Modular, con microservicios.
+
+
+Ricoh
+Mantenimiento y actualización de páginas gubernamentales para el
+Principado de Asturias, utilizando Java.
+Desarrollo y diseño de un nuevo marco utilizando Angular y Spring Boot para
+la modernización de interfaces de usuario.
+Implementación de pruebas funcionales con Selenium para asegurar la
+correcta funcionalidad de los front-ends.
+Todo desplegado en GCP
