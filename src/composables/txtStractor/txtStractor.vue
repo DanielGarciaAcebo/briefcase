@@ -1,7 +1,7 @@
 <template>
-<dic>
-  {{txtContent}}
-</dic>
+  <div>
+<!--    {{extractedParts[0].content}}-->
+  </div>
 </template>
 
 <script lang="ts">
@@ -11,14 +11,20 @@ import { setupTxtExtractor } from './txtStractor';
 export default defineComponent({
   name: 'TxtExtractor',
   setup() {
-    const { txtContent, loadTxt } = setupTxtExtractor();
+    const { txtContent, loadTxt, extractParts } = setupTxtExtractor();
+    const extractedParts = ref<{ marker: string; content: string }[]>([]);
 
     onMounted(() => {
-      loadTxt();
+      loadTxt().then(() => {
+        extractedParts.value = extractParts();
+
+      });
     });
+
 
     return {
       txtContent,
+      extractedParts
     };
   },
 });
