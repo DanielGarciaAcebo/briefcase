@@ -1,35 +1,40 @@
 <template>
-  <div>
-<!--    {{extractedParts[0].content}}-->
+  <h3>Biografia</h3>
+  <div v-if="extractedParts" >
+    <div v-for="(part, index) in extractedParts" :key="index">
+      <ul>
+        {{part.content}}
+      </ul>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
-import { setupTxtExtractor } from './txtStractor';
+import { setupTxtExtractor } from '@/composables/txtStractor/txtStractor';
+import ex = CSS.ex
 
 export default defineComponent({
-  name: 'TxtExtractor',
+  name: 'biography',
   setup() {
     const { txtContent, loadTxt, extractParts, txt } = setupTxtExtractor();
     const extractedParts = ref<{ marker: string; content: string }[]>([]);
 
     onMounted(() => {
-      loadTxt(txt('exp')).then(() => {
+      loadTxt(txt('bio')).then(() => {
         extractedParts.value = extractParts();
-
       });
     });
 
-
     return {
       txtContent,
-      extractedParts
+      extractedParts,
     };
   },
 });
+
 </script>
 
 <style scoped>
-/* Tus estilos aquí */
+
 </style>
