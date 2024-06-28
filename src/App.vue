@@ -3,9 +3,8 @@
     <header>
       <h1>Bienvenido a Mi Portafolio</h1>
     </header>
-
     <div>
-
+      <startedBriefcase/>
     </div>
     <div>
       <experience />
@@ -22,7 +21,8 @@
 
 <script setup lang="ts" >
 import experience from '@/components/experience/experience.vue';
-import projects from '@/components/projects/Proyects.vue'
+import projects from '@/components/projects/Proyects.vue';
+import startedBriefcase from './components/startedBriefcase/startedBriefcase.vue';
 
 </script>
 

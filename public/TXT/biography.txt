@@ -1,0 +1,8 @@
+->3
+Desarrollo páginas web con las últimas tecnologías tanto en back-end y front-end. Las cuales son compatibles con dispositivos móviles (Responsive Design). Estas tecnologías que más uso son Angular (Tengo también conocimiento de jQuery, Vue.js y React.js) en caso del front-end y en caso de back-end las tecnologías las cuales entiendo son Django y Flask, siendo esta última la más trabajada (Tengo conocimiento de Laravel con PHP y java). Personalmente me gusta trabajar en un sistema operativo Linux, pero no tengo problema en desarrollar en Windows.
+
+->2
+En el día a día me centro mucho en cumplir las pautas internacionales de calidad (W3C y accesibilidad WCAG 3.0). Centrándose también en la limpieza del código, así como un código bien comentado, esto último teniendo en cuenta su futuro mantenimiento. Recordando a su vez la optimización para una buena experiencia de usuario, alto rendimiento y posicionamiento en buscadores.
+
+->1
+A nivel personal, soy una persona a la cual le apasiona el mundo de la programación. A lo cual se le suma la curiosidad y ganas de aprender cosas nuevas. Todo esto me lleva a hacer varios proyectos personales con distintas tecnologías y lenguajes en un sistema operativo Linux (Arch linux). Estoy acostumbrado a trabajar de forma efectiva y constante tanto individualmente como en equipo. Tengo un gran trato con otras personas siendo capaz de encajar todo tipo de críticas. Estoy completamente familiarizado con las herramientas y metodologías habituales de colaboración (GIT, Bitbucket, GitHub, Redmine, etc).

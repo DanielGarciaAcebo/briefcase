@@ -3,9 +3,9 @@ import { ref } from 'vue';
 export function setupTxtExtractor() {
     const txtContent = ref<string>('');
 
-    const loadTxt = async () => {
+    const loadTxt = async (url:string) => {
         try {
-            const response = await fetch('/TXT/EXP.txt');
+            const response = await fetch(url);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -29,11 +29,26 @@ export function setupTxtExtractor() {
         return content.split('.').map(sentence => sentence.trim()).filter(sentence => sentence.length > 0);
     };
 
+    const txt  = (x: string) =>{
+        switch (x) {
+            case x = 'exp':{
+                return x = '/TXT/exp.txt'
+            }
+            case x = 'bio':{
+                return x = '/TXT/biography.txt'
+            }
+            default: {
+                throw new Error('Unknown text type');
+            }
+        }
+    };
+
     return {
         txtContent,
         loadTxt,
         extractParts,
-        splitContentByPeriods
+        splitContentByPeriods,
+        txt
     };
 }
 

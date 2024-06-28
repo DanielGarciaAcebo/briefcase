@@ -24,11 +24,11 @@ import { setupTxtExtractor } from '@/composables/txtStractor/txtStractor';
 export default defineComponent({
   name: 'AltostratusTxt',
   setup() {
-    const { txtContent, loadTxt, extractParts, splitContentByPeriods } = setupTxtExtractor();
+    const { txtContent, loadTxt, extractParts, splitContentByPeriods, txt } = setupTxtExtractor();
     const extractedParts = ref<{ marker: string; content: string }[]>([]);
 
     onMounted(() => {
-      loadTxt().then(() => {
+      loadTxt(txt('exp')).then(() => {
         extractedParts.value = extractParts();
       });
     });

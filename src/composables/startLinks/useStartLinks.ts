@@ -66,11 +66,23 @@ export const useStartLinks = () => {
             iconAndroid: 'socialIcons/GitHub/icons8-github-50(-mdpi).png'
         });
 
+    const infoJobsLinks = createStartLink(
+      {
+        id: 4,
+        name: 'GitHub',
+        value: 'https://github.com/',
+        icon2500: 'socialIcons/GitHub/icons8-github-50.png',
+        icon10000: 'socialIcons/GitHub/icons8-github-100.png',
+        iconIOS: 'socialIcons/GitHub/icons8-github-50(@1×).png',
+        iconAndroid: 'socialIcons/GitHub/icons8-github-50(-mdpi).png'
+      });
+
     return {
         linkedingLinks,
         wikiLinks,
         oficialLinks,
         gitLinks,
+        infoJobsLinks
     };
 };
 
