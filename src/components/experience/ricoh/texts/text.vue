@@ -18,7 +18,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
-import { setupTxtExtractor } from '@/composables/txtStractor/txtStractor';
+import { setupTxtExtractor } from '@/assets/txtStractor/txtStractor';
 
 export default defineComponent({
   name: 'AltostratusTxt',

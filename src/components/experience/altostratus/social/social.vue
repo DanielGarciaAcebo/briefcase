@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <h3>Links</h3>
+  <div class="icons">
     <div
-        v-for="link in links"
-        :key="link.id"
+      v-for="link in links"
+      :key="link.id"
     >
       <a :href="link.value" target="_blank">
         <img :src="link.icon2500" alt="link.name" class="icon-2500"/>

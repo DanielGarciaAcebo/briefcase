@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
-import { setupTxtExtractor } from '@/composables/txtStractor/txtStractor';
+import { setupTxtExtractor } from '@/assets/txtStractor/txtStractor';
 import ex = CSS.ex
 
 export default defineComponent({
