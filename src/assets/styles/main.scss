@@ -1,22 +1,142 @@
+/* Variables de color */
+$primary-green: #1B5E20;
+$secondary-green: #388E3C;
+$tertiary-green: #66BB6A;
+$dark-green: #004d40;
+$black: #000000;
+$white: #FFFFFF;
+$light-gray: #f9f9f9;
+$border-color: #ddd;
 
+/* Estilos generales para el botón */
+button {
+  background-color: $secondary-green;
+  border: 2px solid $dark-green;
+  color: $white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
+  &:hover {
+    background-color: $tertiary-green;
+    transform: scale(1.05);
+  }
+}
+
+/* Estilos del encabezado */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: $dark-green;
+  color: $white;
+
+  .header-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+
+  /* Estilos para asegurar que el botón esté al inicio y la imagen al final */
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .button-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .title-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* Estilos adicionales para el contenedor principal */
+#app {
+  text-align: justify;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  background-color: $light-gray;
+  color: $primary-green;
+
+  > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para el diseño de la tabla */
 .table-layout {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba($black, 0.1);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 }
 
+/* Estilos para el contenido de experiencia */
 .expTxt {
   width: 76%;
   padding: 10px;
   font-size: 1rem;
   line-height: 1.5;
-  border: 1px solid #ddd;
+  border: 1px solid $border-color;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: $white;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba($black, 0.1);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
+/* Estilos para los elementos sociales de experiencia */
 .expSocial {
   width: 20%;
   display: flex;
@@ -25,5 +145,94 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
+/* Estilos del pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $primary-green;
+  color: $white;
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+/* Estilos de contacto personal y social */
+.personalSocialContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+
+  > div {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: $white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba($black, 0.1);
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+/* Estilos para los iconos */
+.icon-2500 {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-625 {
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Estilos para la sección de tecnologías */
+.technologiesBio {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    flex: 1 1 calc(50% - 10px);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+  /* Estilos para la sección de lenguajes y tecnologías */
+.languages-tech {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    flex: 1 1 calc(50% - 10px);
+    margin: 5px;
+  }
+}

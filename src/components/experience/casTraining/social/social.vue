@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <h3>Links</h3>
+  <div class="icons">
     <div
       v-for="link in links"
       :key="link.id"
